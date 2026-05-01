@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dailymycode - Live Follower Tracker</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="background-glow background-glow--one"></div>
+    <div class="background-glow background-glow--two"></div>
+
+    <main class="dashboard">
+      <header class="dashboard-header">
+        <p class="badge">Live Instagram Analytics</p>
+        <h1>dailymycode</h1>
+        <p class="subtitle">
+          Real-time follower tracking with automatic refresh every 10 seconds.
+        </p>
+      </header>
+
+      <section class="metrics-grid">
+        <article class="metric-card metric-card--primary">
+          <p class="metric-title">Follower Count</p>
+          <p id="followers" class="count">-</p>
+          <p class="metric-footnote">Updated continuously from Instagram web data.</p>
+        </article>
+
+        <article class="metric-card">
+          <p class="metric-title">Status</p>
+          <p id="status" class="status">Loading...</p>
+          <p id="updatedAt" class="timestamp">Waiting for first response...</p>
+        </article>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
